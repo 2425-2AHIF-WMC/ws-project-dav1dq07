@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>American Cars | History</title>
+        <link href="style-history.css" rel="stylesheet">
+        <link href="style-general.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <header id = "sticky-bar">
+        <nav id="link-container">
+            <a href="index.html" class="home-page">HOME</a>
+            <a href="history.html" class="history-page">HISTORY</a>
+            <a href="classic-cars.html" class="classic-cars-page">CLASSIC CARS</a>
+            <a href="modern-cars.html" class="modern-cars-page">MODERN CARS</a>
+            <a href="sounds.html" class="sounds-page">SOUNDS</a>
+            <input type="text" placeholder="Search..." class="nav-search">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">About Us</a>
+                <div class="dropdown-content">
+                    <a href="contact.html">Contact</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <button class="theme-toggle" onclick="toggleLightMode()"><strong>Light Mode</strong></button>
+        </nav>
+    </header>
+
+    <script>
+        function toggleLightMode() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+        }
+    </script>
+
+        <div id = "background-img">
+        </div>
+
+        <section id = "second-hero">
+            <h2>The Evolution of American Cars</h2>
+        </section>
+
+    <p id = "under-hero">From the Model T to the modern electric vehicles, American cars have defined innovation, style, and power.</p>
+
+    <div class="container">
+
+            <div class="section" id="introduction">
+                <h3>Introduction</h3>
+                <p>American automotive history is a fascinating journey through innovation and culture. From humble beginnings to dominating the global market, the story of American cars is intertwined with the very fabric of the nation's identity.</p>
+                <div class="informative-text">
+                    <p><strong>Did you know?</strong> By the early 20th century, the United States produced more than 80% of the world's automobiles.</p>
+                </div>
+            </div>
+
+            <div class="section" id="henry-ford">
+                <h3>Henry Ford and the Birth of Mass Production</h3>
+                <img src="https://www.qad.com/blog/wp-content/uploads/2016/12/Blog_01.05.2017_a.jpg" alt="Ford Model T">
+                <p>In 1908, Henry Ford introduced the Model T, a groundbreaking vehicle that revolutionized the automotive industry and transformed society. By pioneering the assembly line technique, Ford drastically reduced production costs, making cars affordable and accessible to millions of people. This innovation not only brought personal transportation to the masses but also profoundly influenced the American way of life, fostering mobility, economic growth, and cultural shifts that continue to resonate today.</p>
+                <div class="informative-text">
+                    <p>The Model T sold over 15 million units by 1927, setting a record that stood for decades.</p>
+                </div>
+            </div>
+
+            <div class="section" id="muscle-cars">
+                <h3>The Golden Age of Muscle Cars</h3>
+                <img src="https://i.gaw.to/content/photos/45/96/459645-voici-hellraiser-une-dodge-charger-1970-de-1000-chevaux.jpg" alt="1969 Dodge Charger">
+                <p>In the 1960s and 70s, muscle cars burst onto the automotive scene, capturing the imagination of enthusiasts and redefining the industry. These powerful machines were the epitome of speed, style, and freedom, drawing attention both on the streets and at the racetrack. Icons like the Ford Mustang, Chevrolet Camaro, and Dodge Charger became symbols of a golden age of American car manufacturing. Their aggressive designs, roaring engines, and raw power defined an era of automotive dominance, leaving a legacy that continues to influence car culture and design to this day.</p>
+                <div class="informative-text">
+                    <p>Muscle cars were often equipped with V8 engines, delivering unparalleled performance for the era.</p>
+                </div>
+            </div>
+
+            <div class="section" id="modern-era">
+                <h3>The Modern Era</h3>
+                <img src="https://www.shop4tesla.com/cdn/shop/articles/tesla-model-3-performance-schneller-als-top-supercars-353595.jpg?v=1728598021" alt="Tesla Model 3">
+                <p>Today, American cars lead in innovation, embracing cutting-edge advancements like electric vehicles, exemplified by the Tesla Model 3, and pioneering autonomous driving technology. The industry continues to push boundaries, blending sustainability with futuristic design and functionality to shape the future of transportation.</p>
+                <div class="informative-text">
+                    <p>The Tesla Model 3 has become one of the best-selling electric vehicles worldwide, reshaping the global automotive landscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class = "footer">
+            <p>&copy; 2024 American Cars. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

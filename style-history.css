@@ -1,0 +1,103 @@
+#background-img {
+    height: 20rem;
+   background: url(https://files.oaiusercontent.com/file-4ATo6WSJbiAs3tQBhZ1SFn?se=2025-01-07T10%3A24%3A38Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da2f0c13c-ae1e-48d5-a4cb-a34eb4992aa5.webp&sig=biTvbdv%2BzaCMl0qU3yBPHeEGnw5AG%2Bh7u9dUUlVwMRQ%3D) center/cover;
+}
+
+#second-hero {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #ff6347;
+    width: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    animation: zoomIn 2s ease-in-out;
+    font-size: 2rem;
+}
+
+#under-hero {
+    font-size: 1.7rem;
+    animation: zoomIn 2s ease-in-out;
+    text-align: center;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.9));
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.light-mode .section {
+    background: linear-gradient(to right, #ffffff, #aeaeae);
+}
+
+.section img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.light-mode .section p {
+    color: black;
+}
+
+.informative-text {
+    background: linear-gradient(to right, #1c1c1c, #000000);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.light-mode .informative-text {
+    background: linear-gradient(to right, #dddddd, #c3c3c3);
+}
+
+/* Animations */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

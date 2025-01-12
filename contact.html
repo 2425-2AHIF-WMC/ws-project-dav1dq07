@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Cars | Modern Cars</title>
+    <link href="style-contact.css" rel="stylesheet">
+    <link href="style-general.css" rel="stylesheet">
+</head>
+<body>
+<header id = "sticky-bar">
+    <nav id="link-container">
+        <a href="index.html" class="home-page">HOME</a>
+        <a href="history.html" class="history-page">HISTORY</a>
+        <a href="classic-cars.html" class="classic-cars-page">CLASSIC CARS</a>
+        <a href="modern-cars.html" class="modern-cars-page">MODERN CARS</a>
+        <a href="sounds.html" class="sounds-page">SOUNDS</a>
+        <input type="text" placeholder="Search..." class="nav-search">
+        <div class="dropdown">
+            <a href="#" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+        <button class="theme-toggle" onclick="toggleLightMode()"><strong>Light Mode</strong></button>
+    </nav>
+</header>
+
+<main>
+    <section id="contact-form-section">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Use the form below to send us a message or reach out directly via email at <strong>info@americancars.com</strong></a>.</p>
+
+        <div id="fake-contact-form">
+            <div class="fake-input">
+                <span>Your Name:</span>
+                <div class="fake-field">[Enter your name]</div>
+            </div>
+            <div class="fake-input">
+                <span>Your Email:</span>
+                <div class="fake-field">[Enter your email]</div>
+            </div>
+            <div class="fake-input">
+                <span>Subject:</span>
+                <div class="fake-field">[Enter the subject]</div>
+            </div>
+            <div class="fake-input">
+                <span>Message:</span>
+                <div class="fake-field fake-textarea">[Write your message]</div>
+            </div>
+            <div class="fake-button">Send Message</div>
+        </div>
+    </section>
+
+    <section id="contact-details">
+        <h2>Our Contact Details</h2>
+        <ul>
+            <li><strong>Email:</strong> <strong>info@americancars.com</strong></li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Address:</strong> 57th Avenue, New York City, NY, USA</li>
+            <li><strong>Working Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</li>
+        </ul>
+    </section>
+</main>
+
+<script>
+    function toggleLightMode() {
+        const body = document.body;
+        body.classList.toggle('light-mode');
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 American Cars. All rights reserved.</p>
+</footer>
+</body>
+</html>
