@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+body.light-mode {
+    background: white;
+    color: black;
+}
+
 
 
 /* Navigator */
@@ -69,17 +74,17 @@ nav a {
     color: white;
     margin: 0 15px;
     font-weight: bold;
-    position: relative; /* for pseudo-elements */
-    transition: color 0.3s; /* color transition */
+    position: relative;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff6347; /* Changes text color on hover */
+    color: #ff6347;
 }
 
 nav a::after {
     content: ''; /* Adds a decorative line under the link */
-    position: absolute; /* Positioned relative to the link */
+    position: absolute;
     left: 0; /* Start from the left */
     bottom: -3px; /* Position below the text */
     height: 3px; /* Line height */
@@ -176,51 +181,51 @@ nav a:hover::after {
     background-color: #ff4326;
 }
 
-body.light-mode {
-    background: white;
-    color: black;
-}
+
+
+
+
 
 /* Animations */
 @keyframes fadeInUp {
     from {
-        transform: translateY(20px); /* Starts below position */
-        opacity: 0; /* Fully transparent */
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
-        transform: translateY(0); /* Moves to position */
-        opacity: 1; /* Fully visible */
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 @keyframes slideUp {
     from {
-        transform: translateY(20px); /* Starts below position */
-        opacity: 0; /* Fully transparent */
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
-        transform: translateY(0); /* Moves to position */
-        opacity: 1; /* Fully visible */
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 @keyframes fadeInDown {
     from {
-        transform: translateY(-100%); /* Starts above the viewport */
-        opacity: 0; /* Fully transparent */
+        transform: translateY(-100%);
+        opacity: 0;
     }
     to {
-        transform: translateY(0); /* Moves to position */
-        opacity: 1; /* Fully visible */
+        transform: translateY(0); /
+        opacity: 1;
     }
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Starts transparent */
+        opacity: 0;
     }
     to {
-        opacity: 1; /* Fully visible */
+        opacity: 1; 
     }
 }
 

@@ -113,6 +113,8 @@
     color: black;
 }
 
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -123,6 +125,8 @@
         transform: translateY(0);
     }
 }
+
+
 
 footer {
     width: 101%;

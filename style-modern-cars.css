@@ -23,7 +23,7 @@ body.light-mode .modern-car-showcase {
     color: black;
 }
 
-.car-gallery {
+.car-showcase {
     display: flex;
     justify-content: center;
     gap: 1.5rem;

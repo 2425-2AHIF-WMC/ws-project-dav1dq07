@@ -1,201 +1,204 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Cars | Modern Cars</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="style-general.css" rel="stylesheet">
-    <link href="style-faq.css" rel="stylesheet">
-</head>
-<body>
-<header id = "sticky-bar">
-    <nav id="link-container">
-        <a href="index.html" class="home-page">HOME</a>
-        <a href="history.html" class="history-page">HISTORY</a>
-        <a href="classic-cars.html" class="classic-cars-page">CLASSIC CARS</a>
-        <a href="modern-cars.html" class="modern-cars-page">MODERN CARS</a>
-        <a href="sounds.html" class="sounds-page">SOUNDS</a>
-        <input type="text" placeholder="Search..." class="nav-search">
-        <div class="dropdown">
-            <a href="#" class="dropbtn">About Us</a>
-            <div class="dropdown-content">
-                <a href="contact.html">Contact</a>
-                <a href="faq.html">FAQ</a>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>American Cars | Modern Cars</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="style-general.css" rel="stylesheet">
+        <link href="style-faq.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id = "sticky-bar">
+            <nav id="link-container">
+                <a href="index.html" class="home-page">HOME</a>
+                <a href="history.html" class="history-page">HISTORY</a>
+                <a href="classic-cars.html" class="classic-cars-page">CLASSIC CARS</a>
+                <a href="modern-cars.html" class="modern-cars-page">MODERN CARS</a>
+                <a href="sounds.html" class="sounds-page">SOUNDS</a>
+                <input type="text" placeholder="Search..." class="nav-search">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="contact.html">Contact</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <button class="theme-toggle" onclick="toggleLightMode()"><strong>Light Mode</strong></button>
+            </nav>
+        </header>
+
+        <div id ="hero">
+            <h1>FAQ (Frequently Asked Questions)</h1>
         </div>
-        <button class="theme-toggle" onclick="toggleLightMode()"><strong>Light Mode</strong></button>
-    </nav>
-</header>
 
-<div id ="hero">
-    <h1>FAQ (Frequently Asked Questions)</h1>
-</div>
+        <!-- BOOTSTRAP Accordion -->
 
-<div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                Are American cars reliable?
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>Yes</strong>, many American cars are reliable, with brands like <strong>Ford</strong> and <strong>Chevrolet</strong> earning high ratings. Research specific models for details.            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                How do American cars compare to European or Japanese cars?
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                American cars <strong>focus</strong> on <strong>power</strong> and <strong>space</strong>, while <strong>European</strong> cars emphasize <strong>handling</strong>, and <strong>Japanese</strong> cars <strong>prioritize efficiency and reliability</strong>.            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Is it expensive to maintain an American car?
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                Maintenance costs vary, but parts for American cars are usually <strong>affordable</strong> and <strong>easy to find</strong>.
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                Are American cars fuel-efficient?</button>
-        </h2>
-        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                Modern American cars are <strong>increasingly fuel-efficient</strong>, with many <strong>hybrid and electric</strong> options available.
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                Can I purchase American cars in Europe?</button>
-        </h2>
-        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>Yes</strong>, <strong>many American cars are exported to Europe</strong>, though <strong>availability and regulations may vary</strong>.
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                Are American cars safe?</button>
-        </h2>
-        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>Yes</strong>, many American cars receive <strong>high safety ratings</strong> and include <strong>advanced safety features</strong>.
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-                Can I customize American cars easily?</button>
-        </h2>
-        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>Yes</strong>, American cars are often <strong>highly customizable</strong>, with <strong>extensive aftermarket support</strong> for <strong>performance upgrades, aesthetic modifications, and accessories</strong>.            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
-                Are American cars good for families?</button>
-        </h2>
-        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>Yes</strong>, vehicles like the Chevrolet Traverse, Ford Explorer, and Chrysler Pacifica are designed with families in mind, offering <strong>ample space, safety features, and comfort</strong>.
-            </div>
-        </div>
-    </div>
-
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
-                    Do American cars handle well in snowy or icy conditions?
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    Many American cars, particularly SUVs and trucks with <strong>all-wheel drive (AWD) or four-wheel drive (4WD)</strong>, are <strong>well-suited for snowy or icy conditions</strong>.
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        Are American cars reliable?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                   <div class="accordion-body">
+                        <strong>Yes</strong>, many American cars are reliable, with brands like <strong>Ford</strong> and <strong>Chevrolet</strong> earning high ratings. Research specific models for details.
+                    </div>
                 </div>
             </div>
-        </div>
 
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
-                What is the average lifespan of an American car?
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    With proper maintenance, most American cars can <strong>150,000 to 200,000 miles or more</strong> , depending on the model and usage.
-                </div>
-        </div>
-    </div>
-
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
-                    Are American cars good for road trips?
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <strong>Yes</strong>, American cars like SUVs and sedans are <strong>designed for comfort and space</strong>, making them <strong>ideal for long road trips</strong>.
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        How do American cars compare to European or Japanese cars?
+                    </button>
+                </h2>
+               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                        American cars <strong>focus</strong> on <strong>power</strong> and <strong>space</strong>, while <strong>European</strong> cars emphasize <strong>handling</strong>, and <strong>Japanese</strong> cars <strong>prioritize efficiency and reliability</strong>.            </div>
                 </div>
             </div>
-        </div>
 
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
-                    What’s the difference between American cars and imports?
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    American cars are typically <strong>larger</strong>, with more <strong>engines</strong> , while imports often focus on <strong>efficiency</strong> , precision handling, and <strong>compact designs</strong>.
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                       Is it expensive to maintain an American car?
+                  </button>
+              </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                   <div class="accordion-body">
+                         Maintenance costs vary, but parts for American cars are usually <strong>affordable</strong> and <strong>easy to find</strong>.
+                    </div>
                 </div>
             </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Are American cars fuel-efficient?</button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Modern American cars are <strong>increasingly fuel-efficient</strong>, with many <strong>hybrid and electric</strong> options available.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        Can I purchase American cars in Europe?</button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes</strong>, <strong>many American cars are exported to Europe</strong>, though <strong>availability and regulations may vary</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        Are American cars safe?</button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes</strong>, many American cars receive <strong>high safety ratings</strong> and include <strong>advanced safety features</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                        Can I customize American cars easily?</button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes</strong>, American cars are often <strong>highly customizable</strong>, with <strong>extensive aftermarket support</strong> for <strong>performance upgrades, aesthetic modifications, and accessories</strong>.            </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                        Are American cars good for families?</button>
+                </h2>
+                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes</strong>, vehicles like the Chevrolet Traverse, Ford Explorer, and Chrysler Pacifica are designed with families in mind, offering <strong>ample space, safety features, and comfort</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                        Do American cars handle well in snowy or icy conditions?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Many American cars, particularly SUVs and trucks with <strong>all-wheel drive (AWD) or four-wheel drive (4WD)</strong>, are <strong>well-suited for snowy or icy conditions</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                        What is the average lifespan of an American car?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            With proper maintenance, most American cars can <strong>150,000 to 200,000 miles or more</strong> , depending on the model and usage.
+                        </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                        Are American cars good for road trips?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes</strong>, American cars like SUVs and sedans are <strong>designed for comfort and space</strong>, making them <strong>ideal for long road trips</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
+                        What’s the difference between American cars and imports?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        American cars are typically <strong>larger</strong>, with more <strong>engines</strong> , while imports often focus on <strong>efficiency</strong> , precision handling, and <strong>compact designs</strong>.
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
-<script>
-    function toggleLightMode() {
-        const body = document.body;
-        body.classList.toggle('light-mode');
-    }
-</script>
+        <script>
+            function toggleLightMode() {
+                const body = document.body;
+                body.classList.toggle('light-mode');
+            }
+        </script>
 
-<footer>
-    <p>&copy; 2024 American Cars. All rights reserved.</p>
-</footer>
-</body>
+        <footer>
+            <p>&copy; 2024 American Cars. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

@@ -21,7 +21,6 @@
     margin: 0;
 }
 
-
 #under-hero {
     text-align: center;
     font-weight: lighter;
@@ -33,7 +32,6 @@
     padding: 50px 20px;
     animation: fadeIn 2s;
 }
-
 
 .hero h2 {
     font-size: 2.5em;
@@ -47,20 +45,20 @@
 }
 
 #info-sections {
-    display: grid; /* Grid layout */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Padding around grid */
-    animation: slideUp 1s ease-in-out; /* Slide-up effect */
+    gap: 20px;
+    padding: 20px;
+    animation: slideUp 1s ease-in-out;
 }
 
 .info-block {
-    background: #333; /* Dark background */
-    color: #fff; /* White text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden; /* Prevents overflow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .light-mode .info-block {
@@ -69,19 +67,19 @@
 }
 
 .info-block:hover {
-    transform: scale(1.05); /* Slightly enlarges block */
+    transform: scale(1.05);
 }
 
 .info-block img {
-    width: 100%; /* Full-width image */
-    height: 200px; /* Fixed height */
-    object-fit: cover; /* Maintains aspect ratio */
-    transition: transform 0.3s; /* Smooth hover effect */
-    margin-bottom: 4.5rem; /* Space below image */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    margin-bottom: 4.5rem;
 }
 
 .info-block:hover img {
-    transform: scale(1.1); /* Enlarges image  */
+    transform: scale(1.1); 
 }
 
 .info-block h2 {
