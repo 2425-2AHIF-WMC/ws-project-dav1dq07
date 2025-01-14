@@ -23,8 +23,11 @@
 
 #under-hero {
     text-align: center;
-    font-weight: lighter;
     font-size: 0.8rem;
+}
+
+#under-hero h1 {
+    font-weight: lighter;
 }
 
 .hero {
@@ -91,7 +94,7 @@
 }
 
 .light-mode .info-block h2 {
-    background-color: white;
+    background-color: #eaeaea;
 }
 
 .info-block p {
