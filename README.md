@@ -10,6 +10,8 @@
 Notes: 
 
 Rename all classes to more specific (to make one style.css)
-+ comments and structuring
+comments and structuring
 
 Change all .css files into one
+
+if possible, delete css elements that are similar (for example neon text)
