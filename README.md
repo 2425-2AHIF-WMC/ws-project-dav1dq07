@@ -4,5 +4,7 @@
 - Commit your progress regularly!
 - Make sure that it is _deployed_ on GitHub Pages
   - Like we did with the very first website we created together in class
- 
-  - Notes: Change all .css files into one
+
+
+
+Notes: Change all .css files into one
