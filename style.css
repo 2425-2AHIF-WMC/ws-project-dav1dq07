@@ -1,0 +1,1041 @@
+/* GENERAL STYLE*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+body.light-mode {
+    background: white;
+    color: black;
+}
+
+
+
+/* Navigator */
+
+
+#sticky-bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #333;
+    z-index: 1;
+}
+
+.light-mode #sticky-bar {
+    color: black;
+    background-color: white;
+    border-bottom: none;
+}
+
+#link-container {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+}
+
+.light-mode #link-container {
+    background-color: #c3c3c3;
+}
+
+#link-container a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.light-mode #link-container a {
+    color: black;
+}
+
+#link-container a:hover {
+    color: #ff6347;
+}
+
+a {
+    padding: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.7s ease;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+nav a::after {
+    content: ''; /* Adds a decorative line under the link */
+    position: absolute;
+    left: 0; /* Start from the left */
+    bottom: -3px; /* Position below the text */
+    height: 3px; /* Line height */
+    width: 0; /* Initial width */
+    background: #ff6347; /* Line color */
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%; /* Expands line to full width on hover */
+}
+
+.nav-search {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    height: 30px;
+    background: #4e4e4e;
+}
+
+.light-mode .nav-search {
+    color: black;
+    background-color: #9e9e9e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.light-mode .dropbtn {
+    background-color: #9e9e9e;
+}
+
+.dropbtn:hover {
+    background-color: #666;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.light-mode .dropdown-content {
+    background-color: #666;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.theme-toggle {
+    background-color: #ff4326;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.theme-toggle:hover {
+    background-color: #ff4326;
+}
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /
+    opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+}
+
+.light-mode footer {
+    color: black;
+    background: #b8b8b8;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links button:hover {
+    background-color: #007bff;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX STYLE */
+
+#index-hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    color: white;
+}
+
+.light-mode #index-hero {
+    background: linear-gradient(45deg, #ffffff, #aeaeae);
+    color: black;
+}
+
+#index-hero h1 {
+    color: #ff6347;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#index-hero p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#index-under-hero {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#index-under-hero h1 {
+    font-weight: lighter;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#index-info-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    padding: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.index-info-block {
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.light-mode .index-info-block {
+    background: #eaeaea;
+    color: black;
+}
+
+.index-info-block:hover {
+    transform: scale(1.05);
+}
+
+.index-info-block img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    margin-bottom: 4.5rem;
+}
+
+.index-info-block:hover img {
+    transform: scale(1.1);
+}
+
+.index-info-block h2 {
+    padding: 15px;
+    background: #333;
+    color: #ff6347;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.light-mode .index-info-block h2 {
+    background-color: #eaeaea;
+}
+
+.index-info-block p {
+    padding: 15px;
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.light-mode .index-info-block p {
+    color: black;
+}
+
+section  a {
+    font-weight: normal;
+    border-radius: 1rem;
+}
+
+a img {
+    border-radius: 1rem;
+}
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+/* HISTORY STYLE */
+
+#history-hero {
+    background: url("resources/american-cars-history.png");
+    height: 30rem;
+}
+
+#history-second-hero {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #ff6347;
+    width: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    animation: zoomIn 2s ease-in-out;
+    font-size: 2rem;
+}
+
+#history-under-hero {
+    font-size: 1.7rem;
+    animation: zoomIn 2s ease-in-out;
+    text-align: center;
+}
+
+.history-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.history-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.9));
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.light-mode .history-section {
+    background: linear-gradient(to right, #ffffff, #aeaeae);
+}
+
+.history-section img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.history-section img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.history-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+}
+
+.history-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.light-mode .history-section p {
+    color: black;
+}
+
+.history-informative-text {
+    background: linear-gradient(to right, #1c1c1c, #000000);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.light-mode .history-informative-text {
+    background: linear-gradient(to right, #dddddd, #c3c3c3);
+}
+
+
+
+
+/* Animations */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CLASSIC CARS STYLE */
+
+#classic-cars-intro {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    color: #ddd;
+}
+
+.light-mode #classic-cars-intro {
+    background: linear-gradient(to right, #d3d3d3, #ffffff);
+    color: black;
+}
+
+#classic-cars-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347;
+}
+
+#classic-cars-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.classic-cars-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.classic-car-card {
+    z-index: -1;
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    height: 27rem;
+    width: 24rem;
+}
+
+.light-mode .classic-car-card {
+    background: linear-gradient(to right, #d6d6d6, #c3c3c3);
+}
+
+.classic-car-card img {
+    max-height: 15rem;
+    max-width: 23rem;
+}
+
+.neon-text {
+    color: #ff6347;
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px #ff6347, 0 0 16px #ff6347, 0 0 24px #ff6347;
+    margin-top: 15px;
+}
+
+.light-mode .classic-neon-text {
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.classic-car-image {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(80%);
+}
+
+.classic-cars-info {
+    text-align: center;
+}
+
+#classic-cars-facts {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #3a3a3a, #111);
+    color: #ddd;
+    text-align: center;
+}
+
+.light-mode #classic-cars-facts {
+    background: linear-gradient(to right, #d6d6d6, #c3c3c3);
+}
+
+#classic-cars-facts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff6347;
+    text-shadow: 0 0 8px #ff6347;
+}
+
+#classic-cars-facts h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+    text-shadow: 0 0 5px #ff6347;
+}
+
+#classic-cars-facts p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 50rem;
+    justify-content: center;
+    justify-self: center;
+}
+
+.light-mode #classic-cars-facts p{
+    color: black;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+/* MODERN CARS STYLE */
+
+#modern-car-hero {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    filter: brightness(70%);
+    animation: fadeIn 2s;
+}
+
+.modern-car-intro {
+    text-align: center;
+    padding: 2rem;
+}
+
+.modern-car-intro h1 {
+    text-shadow: 0 0 8px #ff6347, 0 0 16px #ff6347, 0 0 24px #ff6347;
+    color: #ff6347;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+body.light-mode .modern-car-showcase {
+    background: #f0f0f0;
+    color: black;
+}
+
+.modern-car-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.modern-car-card {
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+body.light-mode .modern-car-card {
+    background: #f9f9f9;
+}
+
+.modern-car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 99, 71, 0.5);
+}
+
+.modern-car-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+body.light-mode .modern-car-card img {
+    filter: brightness(90%);
+}
+
+.modern-car-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6347;
+}
+
+body.light-mode .modern-car-card h2 {
+    color: #e0523a;
+}
+
+#modern-car-features {
+    background: linear-gradient(to bottom, #353535, #000);
+    padding: 1.5rem;
+}
+
+.light-mode #modern-car-features {
+    background: linear-gradient(to bottom, #bfbfbf, #ffffff);
+
+}
+
+#modern-car-features h2 {
+    color: #ff6347;
+    font-size: 2.5rem;
+}
+
+#modern-car-features p {
+    max-width: 40rem;
+    justify-self: center;
+    font-size: 1.1rem;
+}
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+/* SOUNDS STYLE */
+
+#sounds {
+    text-align: center;
+}
+
+#sounds-hero {
+    background: url("https://ind-distribution.com/cdn/shop/products/578e77afc50f640cd4c324db682400a1_1024x1024_40f184ae-7991-4636-908e-d8540682b0fc_1024x1024.jpg?v=1604515853");
+    height: 25rem;
+    filter: brightness(60%);
+}
+
+#headphones {
+    max-height: 35rem;
+}
+
+body h1 {
+    font-size: 36px;
+    color: #ff6347;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #ff6347;
+}
+
+body p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sound-card {
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light-mode .sound-card {
+    background: rgba(227, 227, 227, 0.9);
+}
+
+.sound-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(255, 99, 71, 0.5);
+}
+
+.car-sound-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.sound-card:hover .car-sound-image {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+.sound-card h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.light-mode .sound-card h2 {
+    color: black;
+}
+
+.sound-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sound-btn:hover {
+    background-color: #fff;
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT STYLE */
+
+#contact-form-section {
+    margin: 20px auto;
+    max-width: 950px;
+    text-align: left;
+}
+
+#fake-contact-form .fake-input {
+    margin-bottom: 15px;
+}
+
+#fake-contact-form .fake-input span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#fake-contact-form .fake-field {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+#fake-contact-form .fake-textarea {
+    height: 100px;
+}
+
+#fake-contact-form .fake-button {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#fake-contact-form .fake-button:hover {
+    background-color: #0056b3;
+}
+
+#contact-details {
+    margin: 20px auto;
+    max-width: 950px;
+}
+
+#contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/*                      */
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ STYLE */
+
+#faq-hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347;
+}
+
+.accordion-button {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ff6347;
+    color: #ffffff;
+}
+
+.accordion-body {
+    background-color: black;
+    color: #ffffff;
+}
+
+button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #e5533e;
+}
+
+.light-mode .accordion-button {
+    background-color: #bfbfbf;
+    color: black;
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+
+.light-mode .accordion-button:not(.collapsed) {
+    background-color: #ff6347;
+    color: #ffffff;
+}
+
+.light-mode .accordion-body {
+    background-color: white;
+    color: black;
+}
+
+
+/*                      */
