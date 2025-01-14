@@ -7,4 +7,9 @@
 
 
 
-Notes: Change all .css files into one
+Notes: 
+
+Rename all classes to more specific (to make one style.css)
++ comments and structuring
+
+Change all .css files into one
