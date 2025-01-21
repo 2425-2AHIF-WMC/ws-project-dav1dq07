@@ -20,7 +20,7 @@ body.light-mode {
 #sticky-bar {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 98.3%;
     background-color: #222;
     display: flex;
     padding: 0.5rem 1rem;
@@ -581,7 +581,7 @@ a img {
     z-index: -1;
     background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
     border-radius: 12px;
-    padding: 20px;
+    padding-top: 1rem;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -760,7 +760,9 @@ body.light-mode .modern-car-card h2 {
 
 #modern-car-features {
     background: linear-gradient(to bottom, #353535, #000);
-    padding: 1.5rem;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .light-mode #modern-car-features {
