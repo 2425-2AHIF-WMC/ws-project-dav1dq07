@@ -708,6 +708,10 @@ a img {
     font-weight: normal;
 }
 
+.modern-car-intro p {
+    font-size: 1.2rem;
+}
+
 body.light-mode .modern-car-showcase {
     background: #f0f0f0;
     color: black;
