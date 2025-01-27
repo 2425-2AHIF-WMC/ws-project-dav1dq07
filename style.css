@@ -85,13 +85,13 @@ nav a:hover {
 }
 
 nav a::after {
-    content: ''; /* Adds a decorative line under the link */
+    content: ''; 
     position: absolute;
     left: 0; /* Start from the left */
     bottom: -3px; /* Position below the text */
     height: 3px; /* Line height */
     width: 0; /* Initial width */
-    background: #ff6347; /* Line color */
+    background: #ff6347;
     transition: width 0.3s;
 }
 
